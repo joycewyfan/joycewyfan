@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UX/UI & Web Design — Joyce Fan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  @media (max-width: 720px) { .project-gallery { grid-template-columns: 1fr; } }
+  .project-gallery .img-frame img { aspect-ratio: 16/10; object-fit: cover; }
+  .project-gallery .img-frame { margin-bottom: var(--space-2); }
+  .project-gallery h3 { margin-top: var(--space-2); }
+  .project-gallery p.tag { margin-top: 4px; font-size: 0.85rem; color: var(--ink-soft); }
+
+  .project-placeholder {
+    aspect-ratio: 16/10;
+    border: 1.5px dashed var(--line);
+    border-radius: var(--radius-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-2);
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    background: var(--cream-deep);
+    margin-bottom: var(--space-2);
+  }
+
+  ul.uxui-list { margin: var(--space-2) 0 0; padding-left: 1.2em; }
+  ul.uxui-list li { margin-bottom: 8px; color: var(--brown-deep); opacity: 0.9; }
+
+  .back-link { font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
+  .back-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav section-taupe">
+  <div class="wrap">
+    <a class="nav-name" href="../../index.html">Joyce Fan</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+      <li><a href="../../resume.html">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section-taupe pad-sm">
+  <div class="wrap">
+    <a class="back-link" href="../../portfolio.html" style="color: var(--brown-deep);">&larr; Back to Portfolio</a>
+    <p class="eyebrow mt-3" style="color: var(--brown-deep);">UX/UI &amp; Web Design</p>
+    <h1 class="mt-2" style="max-width: 780px;">Focuses on creating digital experiences that are both visually appealing and easy to use.</h1>
+
+    <ul class="uxui-list">
+      <li><b>UX (User Experience) design</b> involves understanding user needs, organizing information, and shaping the flow of a website or app so it feels intuitive and enjoyable.</li>
+      <li><b>UI (User Interface) design</b> focuses on the look and feel — colours, typography, buttons, layouts, and all the visual elements users interact with.</li>
+    </ul>
+    <p class="mt-3" style="max-width: 640px; color: var(--brown-deep); opacity: 0.85;">Together, UX/UI and web design ensure that digital products are functional, accessible, attractive, and provide a seamless experience from start to finish.</p>
+  </div>
+</section>
+
+<section class="section-cream pad-md">
+  <div class="wrap">
+    <p class="eyebrow">Selected projects</p>
+    <h2 class="mt-2">Case studies</h2>
+    <p class="mt-2" style="max-width: 560px;">Wireframes, prototypes, and finished interfaces — from early sketches to working designs.</p>
+
+    <!-- ============================================================
+         ADD YOUR PROJECTS HERE
+         1. Put your image files in: images/portfolio/uxui-web-design/
+         2. For each project, add a block like this inside .project-gallery:
+
+            <div>
+              <div class="img-frame"><img src="../../images/portfolio/uxui-web-design/your-image.jpg" alt="Describe the project"></div>
+              <h3>Project Name</h3>
+              <p class="tag">Figma · Prototyping</p>
+            </div>
+
+         3. Delete the .project-placeholder blocks below once replaced.
+         ============================================================ -->
+    <div class="project-gallery mt-5">
+
+      <div>
+        <div class="project-placeholder">Add project image<br>project-1.jpg</div>
+        <h3 style="opacity:0.5;">Project Name</h3>
+      </div>
+      <div>
+        <div class="project-placeholder">Add project image<br>project-2.jpg</div>
+        <h3 style="opacity:0.5;">Project Name</h3>
+      </div>
+      <div>
+        <div class="project-placeholder">Add project image<br>project-3.jpg</div>
+        <h3 style="opacity:0.5;">Project Name</h3>
+      </div>
+      <div>
+        <div class="project-placeholder">Add project image<br>project-4.jpg</div>
+        <h3 style="opacity:0.5;">Project Name</h3>
+      </div>
+
+      <!-- Example of a real project block, ready to duplicate:
+      <div>
+        <div class="img-frame"><img src="../../images/portfolio/uxui-web-design/project-1.jpg" alt=""></div>
+        <h3>Project Name</h3>
+        <p class="tag">Figma · Prototyping</p>
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
+<section class="section-brown pad-md center">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <p class="mt-2" style="max-width:420px; margin-left:auto; margin-right:auto;">I'm always open to creative collaborations and opportunities to bring thoughtful ideas to life.</p>
+    <a href="../../contact.html" class="btn btn-outline mt-4">Let's talk</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="footer-name">Joyce Fan</div></div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../portfolio.html">Portfolio</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow me</h4>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram (Art)</a></li>
+          <li><a href="#">Instagram (Personal)</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <p style="color:rgba(244,238,227,0.75); font-size:0.9rem;">Sign up with your email to receive news and updates.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit" class="btn btn-dark" style="background:var(--taupe); color:var(--brown-deep);">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Joyce Fan. All rights reserved.</span>
+      <span>Designed &amp; built by Joyce Fan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>
