@@ -113,8 +113,11 @@ p:last-child { margin-bottom: 0; }
 
 /* ---------- Nav ---------- */
 .site-nav {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 40;
+  background: var(--cream);
+  /* background: transparent; (this is to have a transparent nav for the hero section)*/
 }
 .site-nav .wrap {
   display: flex;
@@ -122,6 +125,8 @@ p:last-child { margin-bottom: 0; }
   justify-content: space-between;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
+  background: var(--cream);
+  /* background: transparent; */
 }
 .nav-name {
   font-family: var(--font-display);
@@ -196,20 +201,27 @@ section { position: relative; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 100vh;
   display: flex;
-  align-items: flex-end;
-  background: #7a7566 url('../images/hero.jpg') center 30% / cover no-repeat;
+  align-items: flex-start;
+  background: #7a7566 url('../images/hero.jpeg') center 30% / cover no-repeat;
   color: #fff;
+}
+.hero { 
+  padding-top: 10rem;
+}
+.hero-inner {
+  margin-left: 100px;
+  padding-left: 0;
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(20,18,14,0.35) 0%, rgba(20,18,14,0.05) 30%, rgba(20,18,14,0.05) 55%, rgba(20,18,14,0.55) 100%);
+  background: linear-gradient(180deg, rgba(8,6,4,0.72) 0%, rgba(8,6,4,0.56) 30%, rgba(8,6,4,0.36) 55%, rgba(8,6,4,0.72) 100%);
 }
-.hero .wrap { position: relative; padding-top: 0; padding-bottom: var(--space-6); }
-.hero-inner { max-width: 620px; }
+.hero .wrap { position: relative; padding-top: 0; padding-bottom: var(--space-10); }
+.hero-inner { max-width: 800px; }
 .hero h1 { color: #fff; margin-bottom: var(--space_1, 6px); }
 .hero .hero-sub {
   font-family: var(--font-display);
