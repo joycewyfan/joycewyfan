@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Joyce Fan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+  @media (max-width: 900px) { .portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .portfolio-grid { grid-template-columns: 1fr; } }
+  .portfolio-card { display:block; }
+  .portfolio-card .work-thumb { aspect-ratio: 4/3; border-radius: var(--radius-card); font-size:1.1rem; }
+  .portfolio-card h3 { margin-top: var(--space-2); }
+  .portfolio-card p.tag { margin-top: 4px; font-size: 0.85rem; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<nav class="site-nav section-cream">
+  <div class="wrap">
+    <a class="nav-name" href="index.html">Joyce Fan</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section-cream page-head">
+  <div class="wrap">
+    <p class="eyebrow">Portfolio</p>
+    <h1 class="mt-2">Selected Works</h1>
+    <p class="mt-2" style="max-width:520px;">A collection of projects across graphic design, illustration, UX/UI, photography, and early visual arts work — spanning school projects, personal explorations, and collaborations.</p>
+  </div>
+</section>
+
+<section class="section-cream pad-md">
+  <div class="wrap">
+    <div class="portfolio-grid">
+
+      <a class="portfolio-card" href="#">
+        <div class="work-thumb swatch-1">Laptop mockup — pink &amp; purple layout design</div>
+        <h3>Graphic Design</h3>
+        <p class="tag">Branding · Layout · Posters</p>
+      </a>
+
+      <a class="portfolio-card" href="#">
+        <div class="work-thumb swatch-2">Digital tablet — colourful map illustration</div>
+        <h3>Digital Art &amp; Illustration</h3>
+        <p class="tag">Procreate · Illustrator</p>
+      </a>
+
+      <a class="portfolio-card" href="#">
+        <div class="work-thumb swatch-3">Laptop mockup — moodboard grid</div>
+        <h3>UX/UI &amp; Web Design</h3>
+        <p class="tag">Figma · Prototyping</p>
+      </a>
+
+      <a class="portfolio-card" href="#">
+        <div class="work-thumb swatch-4">Joyce with camera among magnolia blossoms</div>
+        <h3>Photography</h3>
+        <p class="tag">Event · Lifestyle · Travel</p>
+      </a>
+
+      <a class="portfolio-card" href="#">
+        <div class="work-thumb swatch-5">Dense illustrated collage of everyday objects</div>
+        <h3>Highschool: Visual Arts</h3>
+        <p class="tag">Early sketchbook &amp; studio work</p>
+      </a>
+
+      <a class="portfolio-card" href="#">
+        <div class="work-thumb swatch-6">Product photography — lemon tea packaging</div>
+        <h3>Product Design</h3>
+        <p class="tag">Packaging · Branding</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-taupe pad-md center">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <p class="mt-2" style="max-width:420px; margin-left:auto; margin-right:auto;">I'm always open to creative collaborations and opportunities to bring thoughtful ideas to life.</p>
+    <a href="contact.html" class="btn btn-dark mt-4">Let's talk</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="footer-name">Joyce Fan</div></div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow me</h4>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram (Art)</a></li>
+          <li><a href="#">Instagram (Personal)</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <p style="color:rgba(244,238,227,0.75); font-size:0.9rem;">Sign up with your email to receive news and updates.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit" class="btn btn-dark" style="background:var(--taupe); color:var(--brown-deep);">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Joyce Fan. All rights reserved.</span>
+      <span>Designed &amp; built by Joyce Fan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
