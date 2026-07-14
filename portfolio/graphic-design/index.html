@@ -10,14 +10,30 @@
 <style>
   .project-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-3);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    align-items: start;
   }
-  @media (max-width: 900px) { .project-gallery { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .project-gallery { grid-template-columns: 1fr; } }
-  .project-gallery .img-frame img { aspect-ratio: 4/3; object-fit: cover; }
+  .project-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-card);
+    box-shadow: 0 10px 25px rgba(43, 38, 32, 0.08);
+  }
+  .project-gallery img:first-child {
+    grid-column: 1 / -1;
+    width: min(100%, 940px);
+    margin: 0 auto;
+    box-shadow: 0 14px 32px rgba(43, 38, 32, 0.12);
+  }
   .back-link { font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
   .back-link:hover { text-decoration: underline; }
+
+  @media (max-width: 560px) {
+    .project-gallery { grid-template-columns: 1fr; }
+    .project-gallery img:first-child { grid-column: auto; }
+  }
 </style>
 </head>
 <body>
@@ -46,24 +62,19 @@
 
 <section class="section-cream pad-md">
   <div class="wrap">
-    <p class="eyebrow">Selected pieces</p>
-    <h2 class="mt-2">Process &amp; explorations</h2>
-    <p class="mt-2" style="max-width: 560px;">A running collection of layout studies, posters, and branding explorations — from early sketches to finished pieces.</p>
+    <p class="eyebrow">GBDA 101: Magazine</p>
+    <h2 class="mt-2">Magazine Spread</h2>
+    <p class="mt-2" style="max-width: 560px;">A two-page magazine spread created to demonstrate visual hierarchy, typographic layout, and storytelling through design. The piece balances imagery, white space, and structured typography to create a professional editorial feel.</p>
+    <p class="mt-2" style="max-width: 560px;"><strong>Intent:</strong> Practice layout design and visual storytelling</p>
+    <p class="mt-2" style="max-width: 560px;"><strong>Skills:</strong> Typography, layout, composition</p>
+    <p class="mt-2" style="max-width: 560px;"><strong>Software:</strong> Adobe InDesign, Photoshop</p>
 
     <div class="project-gallery mt-5">
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_00.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_02.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_04.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_06.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_08.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_10.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_12.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_14.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_16.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_18.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_20.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_22.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
-      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_24.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <img src="../../images/portfolio/Fan_Joyce_A4-Print copy/a.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
+      <img src="../../images/portfolio/Fan_Joyce_A4-Print copy/b.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
+      <img src="../../images/portfolio/Fan_Joyce_A4-Print copy/c.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
+      <img src="../../images/portfolio/Fan_Joyce_A4-Print copy/d.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
+      <img src="../../images/portfolio/Fan_Joyce_A4-Print copy/e.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
     </div>
   </div>
 </section>

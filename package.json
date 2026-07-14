@@ -1,0 +1,7 @@
+{
+  "name": "joycefanportfolio",
+  "private": true,
+  "scripts": {
+    "build:photos": "node scripts/generate-photography-gallery.js"
+  }
+}

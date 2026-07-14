@@ -15,7 +15,10 @@
   }
   @media (max-width: 720px) { .project-gallery { grid-template-columns: 1fr; } }
   .project-gallery .img-frame img { aspect-ratio: 16/10; object-fit: cover; }
-  .project-gallery .img-frame { margin-bottom: var(--space-2); }
+  .project-gallery .img-frame { margin-bottom: var(--space-2); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .project-gallery .img-frame:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 14px 28px rgba(43, 38, 32, 0.16); }
+  .project-gallery .img-frame img { transition: transform 0.25s ease; }
+  .project-gallery .img-frame:hover img { transform: scale(1.02); }
   .project-gallery h3 { margin-top: var(--space-2); }
   .project-gallery p.tag { margin-top: 4px; font-size: 0.85rem; color: var(--ink-soft); }
 
@@ -90,22 +93,18 @@
          3. Delete the .project-placeholder blocks below once replaced.
          ============================================================ -->
     <div class="project-gallery mt-5">
-
+      
       <div>
-        <div class="project-placeholder">Add project image<br>project-1.jpg</div>
-        <h3 style="opacity:0.5;">Project Name</h3>
-      </div>
-      <div>
-        <div class="project-placeholder">Add project image<br>project-2.jpg</div>
-        <h3 style="opacity:0.5;">Project Name</h3>
-      </div>
-      <div>
-        <div class="project-placeholder">Add project image<br>project-3.jpg</div>
-        <h3 style="opacity:0.5;">Project Name</h3>
-      </div>
-      <div>
-        <div class="project-placeholder">Add project image<br>project-4.jpg</div>
-        <h3 style="opacity:0.5;">Project Name</h3>
+        <a href="../../images/portfolio/GBDA 228 Web Redesign.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="img-frame"><img src="../../images/portfolio/web mockup.jpg" alt="GBDA 228 Website Redesign project cover" loading="lazy"></div>
+        </a>
+        <h3>GBDA 228 Website Redesign</h3>
+        <p class="tag">Redesigning the website for the Bingsu Cafe near the University of Waterloo.</p>
+        <p class="tag"><strong>Intent:</strong> Redesign a local café’s website to reflect its cheerful identity and improve usability.</p>
+        <p class="tag"><strong>Target Audience:</strong> Café visitors and dessert enthusiasts.</p>
+        <p class="tag"><strong>Skills/Software:</strong> UX research, wireframing, visual design, Figma.</p>
+        <p class="tag"><strong>Impact:</strong> Created a user-friendly, visually cohesive website highlighting Korean dessert culture.</p>
+        <p class="tag"><strong>Areas for Improvement:</strong> Further refine visual hierarchy, typography, and brand color consistency.</p>
       </div>
 
       <!-- Example of a real project block, ready to duplicate:
