@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphic Design — Joyce Fan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+  @media (max-width: 900px) { .project-gallery { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .project-gallery { grid-template-columns: 1fr; } }
+  .project-gallery .img-frame img { aspect-ratio: 4/3; object-fit: cover; }
+  .back-link { font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
+  .back-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav section-taupe">
+  <div class="wrap">
+    <a class="nav-name" href="../../index.html">Joyce Fan</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+      <li><a href="../../resume.html">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section-taupe pad-sm">
+  <div class="wrap">
+    <a class="back-link" href="../../portfolio.html" style="color: var(--brown-deep);">&larr; Back to Portfolio</a>
+    <p class="eyebrow mt-3" style="color: var(--brown-deep);">Graphic Design</p>
+    <h1 class="mt-2" style="max-width: 780px;">The art and practice of combining images, typography, colour, and layout to communicate ideas visually.</h1>
+    <p class="mt-3" style="max-width: 640px; color: var(--brown-deep); opacity: 0.85;">It helps shape how information is understood, enhances branding, and creates engaging experiences across print and digital media. Designers use creativity and strategy to make messages clear, appealing, and memorable.</p>
+  </div>
+</section>
+
+<section class="section-cream pad-md">
+  <div class="wrap">
+    <p class="eyebrow">Selected pieces</p>
+    <h2 class="mt-2">Process &amp; explorations</h2>
+    <p class="mt-2" style="max-width: 560px;">A running collection of layout studies, posters, and branding explorations — from early sketches to finished pieces.</p>
+
+    <div class="project-gallery mt-5">
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_00.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_02.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_04.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_06.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_08.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_10.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_12.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_14.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_16.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_18.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_20.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_22.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+      <div class="img-frame"><img src="../../images/portfolio/graphic-design/gd_24.jpg" alt="Graphic design work by Joyce Fan" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-brown pad-md center">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <p class="mt-2" style="max-width:420px; margin-left:auto; margin-right:auto;">I'm always open to creative collaborations and opportunities to bring thoughtful ideas to life.</p>
+    <a href="../../contact.html" class="btn btn-outline mt-4">Let's talk</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="footer-name">Joyce Fan</div></div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../portfolio.html">Portfolio</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow me</h4>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram (Art)</a></li>
+          <li><a href="#">Instagram (Personal)</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <p style="color:rgba(244,238,227,0.75); font-size:0.9rem;">Sign up with your email to receive news and updates.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit" class="btn btn-dark" style="background:var(--taupe); color:var(--brown-deep);">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Joyce Fan. All rights reserved.</span>
+      <span>Designed &amp; built by Joyce Fan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>
