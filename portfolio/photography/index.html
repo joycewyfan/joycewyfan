@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography — Joyce Fan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+  /* ============================================
+     PHOTO GALLERY — masonry-style grid
+     Uses CSS columns so photos of any orientation
+     (portrait or landscape) sit together cleanly.
+     ============================================ */
+  .photo-gallery {
+    column-count: 3;
+    column-gap: var(--space-3);
+  }
+  @media (max-width: 900px) { .photo-gallery { column-count: 2; } }
+  @media (max-width: 560px) { .photo-gallery { column-count: 1; } }
+
+  .photo-item {
+    break-inside: avoid;
+    margin-bottom: var(--space-3);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+  }
+  .photo-item img {
+    width: 100%;
+    display: block;
+  }
+
+  /* Placeholder tiles — delete these once you add real photos */
+  .photo-placeholder {
+    break-inside: avoid;
+    margin-bottom: var(--space-3);
+    border: 1.5px dashed var(--line);
+    border-radius: var(--radius-card);
+    aspect-ratio: 4 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-2);
+    color: var(--ink-soft);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    background: var(--cream-deep);
+  }
+
+  .back-link { font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
+  .back-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav section-taupe">
+  <div class="wrap">
+    <a class="nav-name" href="../../index.html">Joyce Fan</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+      <li><a href="../../resume.html">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section-taupe pad-sm">
+  <div class="wrap">
+    <a class="back-link" href="../../portfolio.html" style="color: var(--brown-deep);">&larr; Back to Portfolio</a>
+    <p class="eyebrow mt-3" style="color: var(--brown-deep);">Photography</p>
+    <h1 class="mt-2" style="max-width: 780px;">The art of capturing moments, emotions, and stories through images.</h1>
+    <p class="mt-3" style="max-width: 640px; color: var(--brown-deep); opacity: 0.85;">Using cameras, lighting, and composition techniques, photographers transform everyday scenes into visually compelling works. Whether it's portraits, landscapes, events, or creative concepts, photography preserves memories and communicates ideas in a powerful, visual way. It blends technical skill with artistic vision to bring perspectives to life.</p>
+    <a href="https://duck-jellyfish-yk3j.squarespace.com/about-4" class="btn btn-outline-dark mt-4" style="border-color: var(--brown-deep); color: var(--brown-deep);" target="_blank" rel="noopener">Freelance Photography</a>
+  </div>
+</section>
+
+<section class="section-cream pad-md">
+  <div class="wrap">
+    <p class="eyebrow">Personal collection</p>
+    <h2 class="mt-2">Everyday moments</h2>
+    <p class="mt-2" style="max-width: 560px;">Photos down below are mostly photos that I took in my free time or when I wanted to just capture the moment.</p>
+
+    <!-- ============================================================
+         ADD YOUR PHOTOS HERE
+         1. Put your image files in: images/portfolio/photography/
+         2. For each photo, add a block like this inside .photo-gallery:
+
+            <div class="photo-item">
+              <img src="../../images/portfolio/photography/your-photo.jpg" alt="Describe the photo">
+            </div>
+
+         3. Delete the <div class="photo-placeholder">...</div> blocks
+            below once you no longer need them — they're just there
+            to show the layout before you've added real images.
+         ============================================================ -->
+    <div class="photo-gallery mt-5">
+
+      <div class="photo-placeholder">Add photo<br>photo-1.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-2.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-3.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-4.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-5.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-6.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-7.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-8.jpg</div>
+      <div class="photo-placeholder">Add photo<br>photo-9.jpg</div>
+
+      <!-- Example of a real photo block, ready to duplicate:
+      <div class="photo-item">
+        <img src="../../images/portfolio/photography/photo-1.jpg" alt="">
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
+<section class="section-brown pad-md center">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <p class="mt-2" style="max-width:420px; margin-left:auto; margin-right:auto;">I'm always open to creative collaborations and opportunities to bring thoughtful ideas to life.</p>
+    <a href="../../contact.html" class="btn btn-outline mt-4">Let's talk</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="footer-name">Joyce Fan</div></div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../portfolio.html">Portfolio</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow me</h4>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram (Art)</a></li>
+          <li><a href="#">Instagram (Personal)</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <p style="color:rgba(244,238,227,0.75); font-size:0.9rem;">Sign up with your email to receive news and updates.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit" class="btn btn-dark" style="background:var(--taupe); color:var(--brown-deep);">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Joyce Fan. All rights reserved.</span>
+      <span>Designed &amp; built by Joyce Fan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

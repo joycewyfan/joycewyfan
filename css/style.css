@@ -324,6 +324,13 @@ section { position: relative; }
   text-align: center;
   padding: var(--space-2);
 }
+/* Ensure actual <img> thumbnails fill their card without distortion */
+img.work-thumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 .work-card figcaption {
   padding: var(--space-2) var(--space-1) 0;
   font-family: var(--font-display);
