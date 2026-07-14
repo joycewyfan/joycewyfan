@@ -125,7 +125,7 @@ p:last-child { margin-bottom: 0; }
   justify-content: space-between;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
-  /* background: transparent; */
+  /* background: transparent; (Don't really need this here)*/
 }
 .nav-name {
   font-family: var(--font-display);
