@@ -17,25 +17,43 @@
     gap: var(--space-4);
     align-items: start;
   }
-  .project-gallery img {
-    width: 100%;
-    height: auto;
+  .project-card {
     display: block;
-    border-radius: var(--radius-card);
-    box-shadow: 0 10px 25px rgba(43, 38, 32, 0.08);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease;
   }
-  .project-gallery img:first-child {
-    grid-column: 1 / -1;
-    width: min(100%, 940px);
-    margin: 0 auto;
-    box-shadow: 0 14px 32px rgba(43, 38, 32, 0.12);
+  .project-card:hover {
+    transform: translateY(-2px);
+  }
+  .project-card .img-frame {
+    margin-bottom: var(--space-2);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(43, 38, 32, 0.08);
+    aspect-ratio: 4 / 3;
+  }
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+  }
+  .project-card p.tag {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
   }
   .back-link { font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
   .back-link:hover { text-decoration: underline; }
 
   @media (max-width: 560px) {
     .project-gallery { grid-template-columns: 1fr; }
-    .project-gallery img:first-child { grid-column: auto; }
   }
 </style>
 </head>
@@ -65,19 +83,30 @@
 
 <section class="section-cream pad-md">
   <div class="wrap">
-    <p class="eyebrow">GBDA 101: Magazine</p>
-    <h2 class="mt-2">Magazine Spread</h2>
-    <p class="mt-2" style="max-width: 560px;">A two-page magazine spread created to demonstrate visual hierarchy, typographic layout, and storytelling through design. The piece balances imagery, white space, and structured typography to create a professional editorial feel.</p>
-    <p class="mt-2" style="max-width: 560px;"><strong>Intent:</strong> Practice layout design and visual storytelling</p>
-    <p class="mt-2" style="max-width: 560px;"><strong>Skills:</strong> Typography, layout, composition</p>
-    <p class="mt-2" style="max-width: 560px;"><strong>Software:</strong> Adobe InDesign, Photoshop</p>
+    <p class="eyebrow">SELECTED WORK</p>
+    <h2 class="mt-2">Plan, Design, Layout</h2>
+    <p class="mt-2" style="max-width: 560px;">Plan what you want to create, design the visual elements, and layout the final product.</p>
 
     <div class="project-gallery mt-5">
-      <img src="../../images/portfolio/Fan_Joyce_A4-Print/a.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
-      <img src="../../images/portfolio/Fan_Joyce_A4-Print/b.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
-      <img src="../../images/portfolio/Fan_Joyce_A4-Print/c.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
-      <img src="../../images/portfolio/Fan_Joyce_A4-Print/d.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
-      <img src="../../images/portfolio/Fan_Joyce_A4-Print/e.jpg" alt="Graphic design work by Joyce Fan" loading="lazy">
+      <a class="project-card" href="../../images/Portfolio/a-combined.pdf" target="_blank" rel="noopener noreferrer">
+        <div class="img-frame">
+          <img src="../../images/Portfolio/magazine.png" alt="Magazine spread project preview" loading="lazy">
+        </div>
+        <h3>GBDA 101: Magazine Spread</h3>
+        <p class="tag">Editorial layout · Typography · Storytelling</p>
+        <p class="tag">A two-page magazine spread created to demonstrate visual hierarchy, typographic layout, and storytelling through design. The piece balances imagery, white space, and structured typography to create a professional editorial feel.</p>
+        <p class="tag"><strong>Intent:</strong> Create a layout design and visual storytelling about the whole term.</p>
+        <p class="tag"><strong>Skills:</strong> Typography, photography, layout, composition</p>
+        <p class="tag"><strong>Software:</strong> Adobe InDesign, Photoshop, Lightroom, Illustrator</p>
+      </a>
+
+      <a class="project-card" href="../../images/Portfolio/Joyce_Fan_project1.pdf" target="_blank" rel="noopener noreferrer">
+        <div class="img-frame">
+          <img src="../../images/Portfolio/goodDesign.png" alt="Poster concepts project preview" loading="lazy">
+        </div>
+        <h3>Poster Concepts</h3>
+        <p class="tag">Visual exploration · Graphic systems</p>
+      </a>
     </div>
   </div>
 </section>
